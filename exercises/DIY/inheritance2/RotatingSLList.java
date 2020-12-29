@@ -1,6 +1,11 @@
 /* SLList, but with additional rotateRight operation. */
 public class RotatingSLList<Item> extends SLList<Item>{
+
 	/** To do: Implement RotatingSLList such that code compiles and outputs correct result. */
+	public void rotateRight() {
+		Item x = removeLast();
+		addFirst(x);
+	}
 
 	public static void main(String[] args) {
 		RotatingSLList<Integer> rsl = new RotatingSLList<>();
