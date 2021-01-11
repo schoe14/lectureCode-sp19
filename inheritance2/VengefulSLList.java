@@ -29,7 +29,7 @@ public class VengefulSLList<Item> extends SLList<Item> {
 		VengefulSLList<Integer> vs1 = new VengefulSLList<Integer>(0);
 		vs1.addLast(1);
 		vs1.addLast(5);
-		vs1.addLast(10);
+		vs1.addLast(10); 
 		vs1.addLast(13);
 		// vs1 is now: [1, 5, 10, 13] 
 

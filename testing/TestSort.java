@@ -1,9 +1,15 @@
+import com.sun.xml.internal.fastinfoset.util.StringIntMap;
 import org.junit.Test;
+
 import static org.junit.Assert.*;
 
-/** Tests the the Sort class. */
+/**
+ * Tests the the Sort class.
+ */
 public class TestSort {
-    /** Test the Sort.sort method. */
+    /**
+     * Test the Sort.sort method.
+     */
     @Test
     public void testSort() {
         String[] input = {"i", "have", "an", "egg"};
@@ -11,10 +17,24 @@ public class TestSort {
 
         Sort.sort(input);
 
+//        for (int i = 0; i < input.length; i++) {
+//            if (!input[i].equals(expected[i])) {
+//                System.out.print("Mismatch in position " + i + ", expected: " + expected[i] + ", but got: " +
+//                        input[i]);
+//                break;
+//            }
+//        }
+
+//        if (java.util.Arrays.equals(input, expected)) {
+//            System.out.println("Error! There seems to be a problem with Sort.sort.");
+//        }
+
         assertArrayEquals(expected, input);
     }
 
-    /** Test the Sort.findSmallest method. */
+    /**
+     * Test the Sort.findSmallest method.
+     */
     @Test
     public void testFindSmallest() {
         String[] input = {"i", "have", "an", "egg"};
@@ -30,7 +50,9 @@ public class TestSort {
         assertEquals(expected2, actual2);
     }
 
-    /** Test the Sort.swap method. */
+    /**
+     * Test the Sort.swap method.
+     */
     @Test
     public void testSwap() {
         String[] input = {"i", "have", "an", "egg"};
